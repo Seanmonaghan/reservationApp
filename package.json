@@ -1,0 +1,19 @@
+{
+    "name": "reservation-app",
+    "version": "1.0.0",
+    "description": "Basic app demonstrating Node and Express with vanilla javascript. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.",
+    "main": "server.js",
+    "dependencies": {
+      "express":
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.4"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js",
+      "watch": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC"
+  }
