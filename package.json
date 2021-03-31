@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "reservation-app",
     "version": "1.0.0",
     "description": "Basic app demonstrating Node and Express with vanilla javascript. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.",
@@ -17,3 +18,26 @@
     "author": "",
     "license": "ISC"
   }
+=======
+  "name": "reservationapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seanmonaghan/reservationApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seanmonaghan/reservationApp/issues"
+  },
+  "homepage": "https://github.com/Seanmonaghan/reservationApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+>>>>>>> 6aba8b34ffe88f9102cac5c4dacf4c0d25940d56
