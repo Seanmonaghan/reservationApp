@@ -19,6 +19,14 @@ let clients = [];
 let waitingList = [];
 const newCustomer = [];
 
+class Client {
+    constructor(name, number, email) {
+      this.name = name;
+      this.number = number;
+      this.email = email;
+    }
+}
+
 app.get('/api/clients', (req, res) => res.json(clients))
 
 app.get('api/clients/:client', (req, res) => {
@@ -33,7 +41,7 @@ app.get('api/clients/:client', (req, res) => {
     }
 
     return res.json(false);
-})
+});
 
 app.post('/api/clients', (req, res) => {
     const newClient = req.body;
