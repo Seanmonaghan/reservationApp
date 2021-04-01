@@ -1,1 +1,25 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reservation</title>
+</head>
+<body>
+            <div class='container'>
+                <div class='jumbotron text-center'>
+                  <h1>Make Your Reservation Here</h1>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    <form action="http://localhost:3000/thanks" method="POST">
+                     <input name="name" placeholder="enter your name">
+                     <input name="date" placeholder="enter the date">
+                     <input name="time" placeholder="enter the time">
+                     <button type='submit'>make reservation</button>
+                   </form>
+                 </div>
+               </div>
+             </div>
+</body>
+</html>
