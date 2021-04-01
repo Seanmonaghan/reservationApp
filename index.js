@@ -9,14 +9,14 @@ app.use(express.json());
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
-app.get('/res', (req, res) => res.sendFile(path.join(__dirname, 'res.html')));
+app.get('/reservation', (req, res) => res.sendFile(path.join(__dirname, 'reservation.html')));
 
-<<<<<<< HEAD
-app.listen(PORT, () => console.log(`App Listening on PORT ${PORT}`));
-=======
+app.get('/table', (req, res) => res.sendFile(path.join(__dirname, 'table.html')));
+
+
 app.get('/api/clients', (req, res) => res.json(clients))
 
-app.listen(PORT, () => console.log(`App Listening on PORT ${PORT}`));
+
 
 let clients = [];
 let waitingList = [];
@@ -47,4 +47,5 @@ app.post('/api/clients', (req, res) => {
     clients.push(newClient);
     res.json(newClient);
 });
->>>>>>> c52dfc0c4c023dda431530b5230997196d075e93
+
+app.listen(PORT, () => console.log(`App Listening on PORT ${PORT}`));
